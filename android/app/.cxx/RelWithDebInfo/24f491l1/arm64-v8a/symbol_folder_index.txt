@@ -1,0 +1,1 @@
+/Users/6amtech/Projects/6amMart-User-App/build/app/intermediates/cxx/RelWithDebInfo/24f491l1/obj/arm64-v8a

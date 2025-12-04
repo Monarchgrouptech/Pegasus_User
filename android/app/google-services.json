@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "602599280130",
+    "project_id": "pegasus-ecommerce-fed19",
+    "storage_bucket": "pegasus-ecommerce-fed19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602599280130:android:44f6adc3f3ed147513e11b",
+        "android_client_info": {
+          "package_name": "com.Pegasus.pegasus_user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602599280130:android:c3b48667863b3a1b13e11b",
+        "android_client_info": {
+          "package_name": "com.monarch_group.pegasus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

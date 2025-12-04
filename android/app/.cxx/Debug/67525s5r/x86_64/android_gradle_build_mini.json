@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/6amtech/Documents/FlutterSdk/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/6amtech/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/6amtech/Documents/6amtech/6ammart/6amMart-User-App/android/app/.cxx/Debug/67525s5r/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/6amtech/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/6amtech/Documents/6amtech/6ammart/6amMart-User-App/android/app/.cxx/Debug/67525s5r/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
