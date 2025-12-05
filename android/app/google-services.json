@@ -12,7 +12,20 @@
           "package_name": "com.Pegasus.pegasus_user"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "602599280130-gj409g6j9cpne8513hp6g7p35lb91qmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Pegasus.pegasus_user",
+            "certificate_hash": "fed343b051fc652db3932d5675b0ed8b94ee8325"
+          }
+        },
+        {
+          "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602599280130-rpfrdeb6od84b7qqiha05ldns5emvvrn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pegasus.pegasus-user"
+              }
+            }
+          ]
         }
       }
     },
@@ -31,7 +56,20 @@
           "package_name": "com.monarch_group.pegasus"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "602599280130-ufulrhah7ngh4dtibkses0vci6l5pn27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monarch_group.pegasus",
+            "certificate_hash": "fed343b051fc652db3932d5675b0ed8b94ee8325"
+          }
+        },
+        {
+          "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU"
@@ -39,7 +77,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602599280130-rpfrdeb6od84b7qqiha05ldns5emvvrn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pegasus.pegasus-user"
+              }
+            }
+          ]
         }
       }
     }
