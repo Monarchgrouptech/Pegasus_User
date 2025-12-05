@@ -168,7 +168,6 @@ class StoreCard extends StatelessWidget {
                           child: Text(
                             discount > 0 ? '${(isRightSide || discountType == 'percent') ? '' : currencySymbol}$discount${discountType == 'percent' ? '%'
                                 : isRightSide ? currencySymbol : ''} ${'off'.tr}' : 'free_delivery'.tr,
-                            style: robotoMedium.copyWith(color: Theme.of(context).cardColor),
                             style: robotoMedium.copyWith(color: Theme.of(context).cardColor, fontSize: Dimensions.fontSizeSmall),
                             textAlign: TextAlign.center,
                           ),
