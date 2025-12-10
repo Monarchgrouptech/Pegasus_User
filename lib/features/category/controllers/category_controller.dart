@@ -69,11 +69,15 @@ class CategoryController extends GetxController implements GetxService {
       List<CategoryModel>? categoryList;
       if(dataSource == DataSourceEnum.local) {
         categoryList = await categoryServiceInterface.getCategoryList(allCategory, source: DataSourceEnum.local);
-        _prepareCategoryList(categoryList);
+        if(categoryList != null) {
+          _prepareCategoryList(categoryList);
+        }
         getCategoryList(false, fromRecall: true, allCategory: allCategory, dataSource: DataSourceEnum.client);
       } else {
         categoryList = await categoryServiceInterface.getCategoryList(allCategory, source: DataSourceEnum.client);
-        _prepareCategoryList(categoryList);
+        if (categoryList != null && categoryList.isNotEmpty) {
+          _prepareCategoryList(categoryList);
+        }
       }
 
     }

@@ -153,7 +153,7 @@ class _CartScreenState extends State<CartScreen> {
                         color: Theme.of(context).disabledColor.withValues(alpha: 0.3),
                         borderRadius: const BorderRadius.only(topLeft: Radius.circular(Dimensions.radiusDefault), topRight: Radius.circular(Dimensions.radiusDefault)),
                       ),
-                      child: Icon(Icons.drag_handle, color: Theme.of(context).hintColor, size: 25),
+                      child: Icon(Icons.drag_handle, color: Theme.of(context).textTheme.bodyMedium!.color, size: 25),
                     ),
                   ),
                 ),
@@ -210,8 +210,8 @@ class _CartScreenState extends State<CartScreen> {
                                               arguments: StoreScreen(store: Store(id: cartController.cartList[0].item!.storeId), fromModule: false),
                                             );
                                           },
-                                          icon: Icon(Icons.add_circle_outline_sharp, color: Theme.of(context).primaryColor),
-                                          label: Text('add_more_items'.tr, style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeDefault)),
+                                          icon: Icon(Icons.add_circle_outline_sharp, color: Theme.of(context).textTheme.bodyMedium!.color),
+                                          label: Text('add_more_items'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color, fontSize: Dimensions.fontSizeDefault)),
                                         ),
                                       ),
 
@@ -590,8 +590,8 @@ class CheckoutButton extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('subtotal'.tr, style: robotoMedium.copyWith(color:  ResponsiveHelper.isDesktop(context) ? Theme.of(context).textTheme.bodyLarge!.color : Theme.of(context).primaryColor)),
-                    PriceConverter.convertAnimationPrice(cartController.subTotal, textStyle: robotoRegular.copyWith(color: Theme.of(context).primaryColor)),
+                    Text('subtotal'.tr, style: robotoMedium.copyWith(color:  ResponsiveHelper.isDesktop(context) ? Theme.of(context).textTheme.bodyLarge!.color : Theme.of(context).textTheme.bodyMedium!.color)),
+                    PriceConverter.convertAnimationPrice(cartController.subTotal, textStyle: robotoRegular.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color)),
                   ],
                 ),
               ),
@@ -681,6 +681,8 @@ class CheckoutButton extends StatelessWidget {
               SafeArea(
                 child: CustomButton(
                   buttonText: 'confirm_delivery_details'.tr,
+                  color: Theme.of(context).cardColor,
+                  textColor: Theme.of(context).textTheme.bodyMedium!.color,
                   fontSize: ResponsiveHelper.isDesktop(context) ? Dimensions.fontSizeSmall : Dimensions.fontSizeLarge,
                   isBold:  ResponsiveHelper.isDesktop(context) ? false : true,
                   radius: ResponsiveHelper.isDesktop(context) ? Dimensions.radiusSmall : Dimensions.radiusDefault,

@@ -66,8 +66,8 @@ class FilterWidget extends StatelessWidget {
                   min: 0,
                   max: maxValue!.toDouble(),
                   divisions: maxValue!.toInt(),
-                  activeColor: Theme.of(context).primaryColor,
-                  inactiveColor: Theme.of(context).primaryColor.withValues(alpha: 0.3),
+                  activeColor: Colors.green,
+                  inactiveColor: Theme.of(context).textTheme.bodyLarge!.color,
                   labels: RangeLabels(lowerValue.toString(), upperValue.toString()),
                   onChanged: (RangeValues rangeValues) {
                     storeController.setLowerAndUpperValue(rangeValues.start, rangeValues.end);

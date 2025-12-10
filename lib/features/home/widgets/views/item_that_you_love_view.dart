@@ -79,7 +79,7 @@ class _ItemThatYouLoveViewState extends State<ItemThatYouLoveView> {
                 top: 150, right: 10,
                 child: InkWell(
                   onTap: () => swiperController.next(),
-                  child: Icon(Icons.arrow_forward, color: Theme.of(context).primaryColor),
+                  child: Icon(Icons.arrow_forward, color: Theme.of(context).textTheme.bodyMedium!.color),
                 ),
               ),
 
@@ -87,7 +87,7 @@ class _ItemThatYouLoveViewState extends State<ItemThatYouLoveView> {
                 top: 150, left: 10,
                 child: InkWell(
                   onTap: () => swiperController.previous(),
-                  child: Icon(Icons.arrow_back, color: Theme.of(context).primaryColor),
+                  child: Icon(Icons.arrow_back, color: Theme.of(context).textTheme.bodyMedium!.color),
                 ),
               ),
             ],
@@ -283,7 +283,7 @@ class _ItemThatYouLoveShimmerViewState extends State<ItemThatYouLoveShimmerView>
 
                                       Row(mainAxisAlignment: MainAxisAlignment.center, children: [
 
-                                        Icon(Icons.star, size: 15, color: Theme.of(context).primaryColor),
+                                        Icon(Icons.star, size: 15, color: Colors.amber),
                                         const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                                         Container(

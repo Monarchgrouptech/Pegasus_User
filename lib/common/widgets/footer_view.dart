@@ -99,7 +99,7 @@ class _FooterViewState extends State<FooterView> {
                           //margin: const EdgeInsets.symmetric(horizontal: 2,vertical: 0),
                           decoration: BoxDecoration(color: Theme.of(context).primaryColor, borderRadius: BorderRadius.circular(Dimensions.radiusDefault)),
                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                          child: !splashController.isLoading ? Text('subscribe'.tr, style: robotoRegular.copyWith(color: Colors.white, fontSize: Dimensions.fontSizeExtraSmall))
+                          child: !splashController.isLoading ? Text('subscribe'.tr, style: robotoRegular.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color, fontSize: Dimensions.fontSizeExtraSmall))
                               : const SizedBox(height: 15, width: 20, child: CircularProgressIndicator(color: Colors.white)),
                         ),
                       );

@@ -21,9 +21,9 @@ class StoreSortingButton extends StatelessWidget {
           border: Border.all(color: storeController.filterType == storeType ? Theme.of(context).primaryColor : Theme.of(context).disabledColor),
         ),
         child: Row(children: [
-          Icon(storeController.filterType == storeType ? Icons.check_circle : Icons.circle_outlined, color: storeController.filterType == storeType ? Theme.of(context).primaryColor : Theme.of(context).disabledColor, size: 16),
+          Icon(storeController.filterType == storeType ? Icons.check_circle : Icons.circle_outlined, color: storeController.filterType == storeType ? Colors.green : Theme.of(context).disabledColor, size: 16),
           const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-          Text(storeTypeText, style: robotoMedium.copyWith(color: storeController.filterType == storeType ? Theme.of(context).primaryColor : Theme.of(context).disabledColor)),
+          Text(storeTypeText, style: robotoMedium.copyWith(color: storeController.filterType == storeType ? Colors.green : Theme.of(context).disabledColor)),
         ]),
       );
     }

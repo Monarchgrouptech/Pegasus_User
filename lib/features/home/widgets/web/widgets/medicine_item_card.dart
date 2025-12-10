@@ -115,7 +115,7 @@ class MedicineItemCard extends StatelessWidget {
 
                       if(isShop)
                         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                          Icon(Icons.star, size: 15, color: Theme.of(context).primaryColor),
+                          Icon(Icons.star, size: 15, color: Colors.amber),
                           const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                           Text(item.avgRating.toString(), style: robotoRegular),

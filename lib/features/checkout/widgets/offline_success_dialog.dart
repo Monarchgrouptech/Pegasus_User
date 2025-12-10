@@ -25,7 +25,7 @@ class OfflineSuccessDialog extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeSmall, vertical: Dimensions.paddingSizeLarge),
           child: SingleChildScrollView(
             child: Column(children: [
-              Icon(Icons.check_circle, size: 60, color: Theme.of(context).primaryColor),
+              Icon(Icons.check_circle, size: 60, color: Theme.of(context).textTheme.bodyMedium!.color),
               const SizedBox(height: Dimensions.paddingSizeLarge),
 
               Text(
@@ -37,7 +37,7 @@ class OfflineSuccessDialog extends StatelessWidget {
 
               RichText(textAlign: TextAlign.center, text: TextSpan(children: [
                 TextSpan(text: 'your_payment_has_been_successfully_processed_and_your_order'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color!.withValues(alpha: 0.4))),
-                TextSpan(text: ' #$orderId ', style: robotoBold.copyWith(color: Theme.of(context).primaryColor)),
+                TextSpan(text: ' #$orderId ', style: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color)),
                 TextSpan(text: 'has_been_placed'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color!.withValues(alpha: 0.4))),
               ])),
               const SizedBox(height: Dimensions.paddingSizeLarge),

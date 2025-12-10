@@ -123,8 +123,8 @@ class GuestDeliveryAddress extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeSmall, vertical: Dimensions.paddingSizeExtraSmall),
             child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
 
-              Image.asset(Images.guestLocationIcon, height: 15, color: Theme.of(context).primaryColor),
-              Text(' ${checkoutController.guestAddress!.addressType!.tr}:', style: robotoMedium.copyWith(color: Theme.of(context).primaryColor)),
+              Image.asset(Images.guestLocationIcon, height: 15, color: Colors.blue),
+              Text(' ${checkoutController.guestAddress!.addressType!.tr}:', style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color)),
               const SizedBox(width: Dimensions.paddingSizeSmall),
 
               Flexible(child: Text(

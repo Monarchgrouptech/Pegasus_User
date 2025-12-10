@@ -84,30 +84,30 @@ class _CampaignScreenState extends State<CampaignScreen> {
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text('${'campaign_schedule'.tr}:', style: robotoRegular.copyWith(
-                                fontSize: Dimensions.fontSizeExtraSmall, color: Colors.white,
+                                fontSize: Dimensions.fontSizeExtraSmall, color: Colors.green,
                               )),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text(
                                 '${DateConverter.stringToLocalDateOnly(campaignController.basicCampaign!.availableDateStarts!)}'
                                     ' - ${DateConverter.stringToLocalDateOnly(campaignController.basicCampaign!.availableDateEnds!)}',
-                                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium!.color),
                               ),
                             ]) : const SizedBox(),
                             const SizedBox(height: Dimensions.paddingSizeDefault),
 
                             campaignController.basicCampaign!.startTime != null ? Row(children: [
-                              const Icon(Icons.access_time_filled, size: 16, color: Colors.white),
+                              const Icon(Icons.access_time_filled, size: 16, color: Colors.blue),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text('${'daily_time'.tr}:', style: robotoRegular.copyWith(
-                                fontSize: Dimensions.fontSizeExtraSmall, color: Colors.white,
+                                fontSize: Dimensions.fontSizeExtraSmall, color: Colors.green,
                               )),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
                               Text(
                                 '${DateConverter.convertTimeToTime(campaignController.basicCampaign!.startTime!)}'
                                     ' - ${DateConverter.convertTimeToTime(campaignController.basicCampaign!.endTime!)}',
-                                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium!.color),
                               ),
                             ]) : const SizedBox(),
                             const SizedBox(height: Dimensions.paddingSizeExtraSmall),
@@ -188,7 +188,7 @@ class _CampaignScreenState extends State<CampaignScreen> {
                       Text(
                         '${DateConverter.stringToLocalDateOnly(campaignController.basicCampaign!.availableDateStarts!)}'
                             ' - ${DateConverter.stringToLocalDateOnly(campaignController.basicCampaign!.availableDateEnds!)}',
-                        style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                        style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium!.color),
                       ),
                     ]) : const SizedBox(),
                     const SizedBox(height: Dimensions.paddingSizeExtraSmall),
@@ -201,7 +201,7 @@ class _CampaignScreenState extends State<CampaignScreen> {
                       Text(
                         '${DateConverter.convertTimeToTime(campaignController.basicCampaign!.startTime!)}'
                             ' - ${DateConverter.convertTimeToTime(campaignController.basicCampaign!.endTime!)}',
-                        style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                        style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium!.color),
                       ),
                     ]) : const SizedBox(),
                     const SizedBox(height: Dimensions.paddingSizeDefault),

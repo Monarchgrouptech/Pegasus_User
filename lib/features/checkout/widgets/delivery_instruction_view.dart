@@ -62,7 +62,7 @@ class _DeliveryInstructionViewState extends State<DeliveryInstructionView> {
                         padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),
                         margin: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
                         child: Row(children: [
-                          Icon(Icons.ac_unit, color: isSelected ? Theme.of(context).primaryColor : Theme.of(context).disabledColor, size: 18),
+                          Icon(Icons.ac_unit, color: isSelected ? Colors.green : Theme.of(context).disabledColor, size: 18),
                           const SizedBox(width: Dimensions.paddingSizeSmall),
 
                           Expanded(

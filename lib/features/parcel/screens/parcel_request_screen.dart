@@ -194,7 +194,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                           const SizedBox(width: Dimensions.paddingSizeSmall),
 
                           Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                            Text(widget.parcelCategory.name!, style: robotoBold.copyWith(color: Theme.of(context).primaryColor)),
+                            Text(widget.parcelCategory.name!, style: robotoBold.copyWith(color: Theme.of(context).secondaryHeaderColor)),
                             const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
                             Text(
@@ -223,7 +223,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                           Text('distance'.tr, style: robotoRegular),
                           Text(
                             parcelController.distance == -1 ? 'calculating'.tr : '${parcelController.distance!.toStringAsFixed(2)} ${'km'.tr}',
-                            style: robotoBold.copyWith(color: Theme.of(context).primaryColor),
+                            style: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color),
                           ),
                         ]),
                       ])),
@@ -234,7 +234,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                           Text('delivery_fee'.tr, style: robotoRegular),
                           Text(
                             parcelController.distance == -1 ? 'calculating'.tr : PriceConverter.convertPrice(charge),
-                            style: robotoBold.copyWith(color: Theme.of(context).primaryColor), textDirection: TextDirection.ltr,
+                            style: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color), textDirection: TextDirection.ltr,
                           ),
                         ]),
                       ]))
@@ -264,7 +264,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                               },
                               child: const Padding(
                                 padding: EdgeInsets.only(left: Dimensions.paddingSizeDefault),
-                                child: Icon(CupertinoIcons.add, size: 20),
+                                child: Icon(CupertinoIcons.add, color: Colors.green, size: 20),
                               ),
                             ),
                           ]),
@@ -283,7 +283,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                                     Flexible(
                                       child: Text(
                                         parcelController.parcelInstructionList![parcelController.selectedIndexNote!].instruction ?? '',
-                                        style: robotoMedium.copyWith(color: Theme.of(context).primaryColor), maxLines: 1, overflow: TextOverflow.ellipsis,
+                                        style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color), maxLines: 1, overflow: TextOverflow.ellipsis,
                                       ),
                                     ),
                                     const SizedBox(width: Dimensions.paddingSizeSmall),
@@ -364,11 +364,11 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                           onTap: () => parcelController.toggleDmTipSave(),
                           leading: Checkbox(
                             visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
-                            activeColor: Theme.of(context).primaryColor,
+                            activeColor: Theme.of(context).textTheme.bodyMedium!.color,
                             value: parcelController.isDmTipSave,
                             onChanged: (bool? isChecked) => parcelController.toggleDmTipSave(),
                           ),
-                          title: Text('save_for_later'.tr, style: robotoMedium.copyWith(color: Theme.of(context).primaryColor)),
+                          title: Text('save_for_later'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color)),
                           contentPadding: EdgeInsets.zero,
                           visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                           dense: true,
@@ -441,7 +441,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                             onChanged: (String? payerType) => parcelController.setPayerIndex(0, true),
                             child: Radio<String>(
                               value: parcelController.payerTypes[0],
-                              activeColor: Theme.of(context).primaryColor,
+                              activeColor: Theme.of(context).textTheme.bodyMedium!.color,
                             ),
                           ),
                           Text(parcelController.payerTypes[0].tr, style: robotoRegular),
@@ -455,7 +455,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                             onChanged: (String? payerType) => parcelController.setPayerIndex(1, true),
                             child: Radio<String>(
                               value: parcelController.payerTypes[1],
-                              activeColor: Theme.of(context).primaryColor,
+                              activeColor: Theme.of(context).textTheme.bodyMedium!.color,
                             ),
                           ),
                           Text(parcelController.payerTypes[1].tr, style: robotoRegular),
@@ -519,10 +519,10 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                                   Container(
                                     height: 20, width: 20,
                                     decoration: BoxDecoration(
-                                        shape: BoxShape.circle, color: isSelected ? Theme.of(context).primaryColor : Theme.of(context).cardColor,
+                                        shape: BoxShape.circle, color: isSelected ? Theme.of(context).secondaryHeaderColor : Theme.of(context).cardColor,
                                         border: Border.all(color: Theme.of(context).disabledColor)
                                     ),
-                                    child: Icon(Icons.check, color: Theme.of(context).cardColor, size: 16),
+                                    child: Icon(Icons.check, color: Theme.of(context).textTheme.bodyMedium!.color, size: 16),
                                   ),
                                   const SizedBox(width: Dimensions.paddingSizeDefault),
 
@@ -610,7 +610,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
                       Text('total_amount'.tr, style: robotoMedium),
 
                       checkoutController.taxIncluded == 1  ? Text(' ${'vat_tax_inc'.tr}', style: robotoMedium.copyWith(
-                        fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor,
+                        fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium!.color,
                       )) : const SizedBox(),
 
                       const Expanded(child: SizedBox()),
@@ -648,6 +648,7 @@ class _ParcelRequestScreenState extends State<ParcelRequestScreen> {
 
     return CustomButton(
       buttonText: 'confirm_parcel_request'.tr,
+      color: Colors.green,
       isLoading: parcelController.isLoading,
       margin: ResponsiveHelper.isDesktop(context) ? null : const EdgeInsets.all(Dimensions.paddingSizeSmall),
       onPressed: parcelController.acceptTerms ? () {

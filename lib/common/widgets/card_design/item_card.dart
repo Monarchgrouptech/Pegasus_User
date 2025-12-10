@@ -135,7 +135,7 @@ class ItemCard extends StatelessWidget {
                                 style: robotoBold, maxLines: 1, overflow: TextOverflow.ellipsis,
                               ),
                             ) : item.ratingCount! > 0 ? Row(mainAxisAlignment: isPopularItem ? MainAxisAlignment.center : MainAxisAlignment.start, children: [
-                              Icon(Icons.star, size: 14, color: Theme.of(context).primaryColor),
+                              Icon(Icons.star, size: 14, color: Colors.amber),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text(item.avgRating!.toStringAsFixed(1), style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall)),
@@ -146,7 +146,7 @@ class ItemCard extends StatelessWidget {
 
                             // showUnitOrRattings(context);
                             (isFood || isShop) ? item.ratingCount! > 0 ? Row(mainAxisAlignment: isPopularItem ? MainAxisAlignment.center : MainAxisAlignment.start, children: [
-                              Icon(Icons.star, size: 14, color: Theme.of(context).primaryColor),
+                              Icon(Icons.star, size: 14, color: Colors.amber),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text(item.avgRating!.toStringAsFixed(1), style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall)),

@@ -85,7 +85,7 @@ class CartCountView extends StatelessWidget {
             shape: BoxShape.circle, color: Theme.of(context).cardColor,
             boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 5, spreadRadius: 1)],
           ),
-          child: Icon(Icons.add, size: 20, color: Theme.of(context).primaryColor),
+          child: Icon(Icons.add, size: 20, color: Theme.of(context).secondaryHeaderColor),
         ),
       );
     });

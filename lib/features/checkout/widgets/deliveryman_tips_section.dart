@@ -55,7 +55,7 @@ class _DeliveryManTipsSectionState extends State<DeliveryManTipsSection> {
                     tailBaseWidth: 20,
                     content: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('it_s_a_great_way_to_show_your_appreciation_for_their_hard_work'.tr,style: robotoRegular.copyWith(color: Colors.white)),
+                      child: Text('it_s_a_great_way_to_show_your_appreciation_for_their_hard_work'.tr,style: robotoRegular.copyWith(color: Colors.green)),
                     ),
                     child: InkWell(
                       onTap: () => widget.tooltipController3.showTooltip(),
@@ -107,11 +107,11 @@ class _DeliveryManTipsSectionState extends State<DeliveryManTipsSection> {
                   onTap: () => checkoutController.toggleDmTipSave(),
                   leading: Checkbox(
                     visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
-                    activeColor: Theme.of(context).primaryColor,
+                    activeColor: Colors.lightGreen,
                     value: checkoutController.isDmTipSave,
                     onChanged: (bool? isChecked) => checkoutController.toggleDmTipSave(),
                   ),
-                  title: Text('save_for_later'.tr, style: robotoMedium.copyWith(color: Theme.of(context).primaryColor)),
+                  title: Text('save_for_later'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color)),
                   contentPadding: EdgeInsets.zero,
                   visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                   dense: true,

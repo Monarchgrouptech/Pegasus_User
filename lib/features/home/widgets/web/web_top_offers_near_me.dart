@@ -147,7 +147,7 @@ class _WebTopOffersNearMeState extends State<WebTopOffersNearMe> {
     String discountType = store.discount?.discountType ?? '';
     bool isRightSide = Get.find<SplashController>().configModel!.currencySymbolDirection == 'right';
     String currencySymbol = Get.find<SplashController>().configModel!.currencySymbol!;
-    bool isAvailable = store.open == 1 && store.active!;
+    bool isAvailable = store.open == 1 ;
 
     return Padding(
       padding: EdgeInsets.only(

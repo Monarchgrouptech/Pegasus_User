@@ -97,7 +97,7 @@ class _LoyaltyScreenState extends State<LoyaltyScreen> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: isLoggedIn && !ResponsiveHelper.isDesktop(context) ? FloatingActionButton.extended(
           backgroundColor: Theme.of(context).primaryColor,
-          label: Text( 'convert_to_wallet_money'.tr, style: robotoBold.copyWith(color: Colors.white, fontSize: Dimensions.fontSizeDefault)),
+          label: Text( 'convert_to_wallet_money'.tr, style: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color, fontSize: Dimensions.fontSizeDefault)),
           onPressed: (){
             Get.dialog(
               Dialog(backgroundColor: Colors.transparent, child: LoyaltyBottomSheetWidget(

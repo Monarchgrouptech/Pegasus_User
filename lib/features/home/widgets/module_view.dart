@@ -223,7 +223,7 @@ class AddressShimmer extends StatelessWidget {
                   child: Row(mainAxisSize: MainAxisSize.min, children: [
                     Icon(
                       Icons.location_on,
-                      size: ResponsiveHelper.isDesktop(context) ? 50 : 40, color: Theme.of(context).primaryColor,
+                      size: ResponsiveHelper.isDesktop(context) ? 50 : 40, color: Colors.red,
                     ),
                     const SizedBox(width: Dimensions.paddingSizeSmall),
                     Expanded(

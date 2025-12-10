@@ -75,7 +75,7 @@ class ParcelAppBarWidget extends StatelessWidget implements PreferredSizeWidget 
                   Icon(CupertinoIcons.bell, size: 25, color: Theme.of(context).textTheme.bodyLarge!.color),
                   notificationController.hasNotification ? Positioned(top: 0, right: 0, child: Container(
                     height: 10, width: 10, decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor, shape: BoxShape.circle,
+                    color: Colors.red, shape: BoxShape.circle,
                     border: Border.all(width: 1, color: Theme.of(context).cardColor),
                   ),
                   )) : const SizedBox(),

@@ -201,7 +201,7 @@ class WebBestReviewItemShimmer extends StatelessWidget {
 
                           Positioned(
                             top: 10, right: 10,
-                            child: Icon(Icons.favorite, size: 20, color: Theme.of(context).cardColor),
+                            child: Icon(Icons.favorite, size: 20, color: Colors.green),
                           ),
 
 

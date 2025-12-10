@@ -12,7 +12,7 @@ class AppConstants {
   static const int balanceInputLen = 10;
   static const String webHostedUrl = 'https://olympus.usepegasus.com';
   static const bool useReactWebsite = false;
-  static const String googleServerClientId = '491987943015-agln6biv84krpnngdphj87jkko7r9lb8.apps.googleusercontent.com';
+  static const String googleServerClientId = '602599280130-gj409g6j9cpne8513hp6g7p35lb91qmh.apps.googleusercontent.com';
 
   static const String baseUrl = 'https://olympus.usepegasus.com';
   static const String categoryUri = '/api/v1/categories';

@@ -140,7 +140,7 @@ class _SavedAddressBottomSheetState extends State<SavedAddressBottomSheet> {
                               Image.asset(
                                 address!.addressType == 'home' ? Images.homeIcon : address.addressType == 'office' ? Images.workIcon : Images.otherIcon,
                                 color: (widget.isSender && widget.senderAddressController.text == address.address) || (!widget.isSender && widget.receiverAddressController.text == address.address)
-                                    ? Theme.of(context).primaryColor : Theme.of(context).disabledColor.withValues(alpha: 0.6),
+                                    ? Theme.of(context).secondaryHeaderColor : Theme.of(context).disabledColor.withValues(alpha: 0.6),
                                 height: ResponsiveHelper.isDesktop(context) ? 25 : 20, width: ResponsiveHelper.isDesktop(context) ? 25 : 20,
                               ),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
@@ -174,7 +174,7 @@ class _SavedAddressBottomSheetState extends State<SavedAddressBottomSheet> {
                   color: Theme.of(context).disabledColor.withValues(alpha: 0.1),
                   textColor: Theme.of(context).textTheme.bodyLarge?.color,
                   fontSize: Dimensions.fontSizeDefault,
-                  iconColor: Theme.of(context).primaryColor,
+                  iconColor: Colors.green,
                   isBold: false,
                   onPressed: () {
                     Get.back();

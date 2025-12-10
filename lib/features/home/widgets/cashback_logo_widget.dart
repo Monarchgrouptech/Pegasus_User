@@ -14,7 +14,7 @@ class CashBackLogoWidget extends StatelessWidget {
 
         Positioned(
           top: 10, left: 15,
-          child: Text('cash_back'.tr, style: robotoBold.copyWith(color: Colors.white)),
+          child: Text('cash_back'.tr, style: robotoBold.copyWith(color: Theme.of(context).colorScheme.onPrimary)),
         )
       ],
     );

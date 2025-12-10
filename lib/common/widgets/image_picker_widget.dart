@@ -32,7 +32,7 @@ class ImagePickerWidget extends StatelessWidget {
                 border: Border.all(width: 2, color: Colors.white),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(Icons.camera_alt, color: Colors.white),
+              child: const Icon(Icons.camera_alt, color: Colors.greenAccent),
             ),
           ),
         ),

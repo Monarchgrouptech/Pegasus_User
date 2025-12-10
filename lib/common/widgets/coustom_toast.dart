@@ -15,7 +15,7 @@ class CustomToast extends StatelessWidget {
   const CustomToast({
     super.key,
     required this.text,
-    this.textColor = Colors.white,
+    this.textColor = Colors.green,
     this.borderRadius = 30,
     this.padding = const EdgeInsets.symmetric(horizontal: 15, vertical: 10), required this.isError,
   });

@@ -135,7 +135,7 @@ class SelectedCardWidget extends StatelessWidget {
       Expanded(child: Text(title, style: robotoRegular.copyWith(color: Theme.of(context).disabledColor), maxLines: 2, overflow: TextOverflow.ellipsis)),
       const SizedBox(width: Dimensions.paddingSizeLarge),
 
-      Icon(isSelect ? Icons.check_box : Icons.check_box_outline_blank, color: isSelect ? Theme.of(context).primaryColor : Theme.of(context).disabledColor, size: 25, ),
+      Icon(isSelect ? Icons.check_box : Icons.check_box_outline_blank, color: isSelect ? Colors.blue : Theme.of(context).disabledColor, size: 25, ),
 
     ]);
   }

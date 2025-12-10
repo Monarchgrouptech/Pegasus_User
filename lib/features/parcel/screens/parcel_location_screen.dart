@@ -176,12 +176,12 @@ class _ParcelLocationScreenState extends State<ParcelLocationScreen> with Ticker
                             padding: EdgeInsets.all(Dimensions.paddingSizeSmall),
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: parcelController.isSender ? Theme.of(context).primaryColor : null,
+                              color: parcelController.isSender ? Colors.green : Colors.black,
                               borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
                             ),
                             child: Text(
                               'sender_info'.tr,
-                              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: parcelController.isSender ? Theme.of(context).cardColor : Theme.of(context).primaryColor),
+                              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: parcelController.isSender ? Theme.of(context).cardColor : Colors.white),
                             ),
                           ),
 
@@ -189,12 +189,12 @@ class _ParcelLocationScreenState extends State<ParcelLocationScreen> with Ticker
                             padding: EdgeInsets.all(Dimensions.paddingSizeSmall),
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: parcelController.isSender ? null : Theme.of(context).primaryColor,
+                              color: parcelController.isSender ? Colors.black : Colors.green,
                               borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
                             ),
                             child: Text(
                               'receiver_info'.tr,
-                              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: parcelController.isSender ? Theme.of(context).primaryColor : Theme.of(context).cardColor),
+                              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: parcelController.isSender ? Colors.white : Theme.of(context).cardColor),
                             ),
                           ),
                         ],
@@ -239,6 +239,7 @@ class _ParcelLocationScreenState extends State<ParcelLocationScreen> with Ticker
       return CustomButton(
         margin: ResponsiveHelper.isDesktop(context) ? null : const EdgeInsets.all(Dimensions.paddingSizeSmall),
         buttonText: parcelController.isSender ? 'continue'.tr : 'save_and_continue'.tr,
+        color: Colors.lightGreen,
         onPressed: () async {
           if( _tabController!.index == 0 ) {
             _validateSender(parcelController);

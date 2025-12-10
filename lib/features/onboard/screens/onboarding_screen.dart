@@ -89,16 +89,21 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   child: Row(children: [
                     onBoardingController.selectedIndex == 2 ? const SizedBox() : Expanded(
                       child: CustomButton(
-                        transparent: true,
+                        transparent: false,
                         onPressed: () {
                           _configureToRouteInitialPage();
                         },
                         buttonText: 'skip'.tr,
+
+                        textColor: Colors.white,
+                        color:  Colors.black,
                       ),
                     ),
                     Expanded(
                       child: CustomButton(
                         buttonText: onBoardingController.selectedIndex != 2 ? 'next'.tr : 'get_started'.tr,
+                        textColor: Colors.white,
+                        color: Colors.green,
                         onPressed: () {
                           if(onBoardingController.selectedIndex != 2) {
                            _pageController.nextPage(duration: const Duration(seconds: 1), curve: Curves.easeInOut);
@@ -128,7 +133,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           width: 7, height: 7,
           margin: const EdgeInsets.only(right: 10),
           decoration: BoxDecoration(
-            color: i == onBoardingController.selectedIndex ? Theme.of(context).primaryColor : Theme.of(context).disabledColor,
+            color: i == onBoardingController.selectedIndex ? Theme.of(context).hintColor : Theme.of(context).disabledColor,
             borderRadius: i == onBoardingController.selectedIndex ? BorderRadius.circular(50) : BorderRadius.circular(25),
           ),
         ),

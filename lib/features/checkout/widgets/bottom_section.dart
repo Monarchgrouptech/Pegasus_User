@@ -103,7 +103,7 @@ class BottomSection extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text( 'total_amount'.tr, style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor)),
+                      Text( 'total_amount'.tr, style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium!.color)),
                       storeId == null ? const SizedBox() : Text(
                         'Once_your_order_is_confirmed_you_will_receive'.tr,
                         style: robotoRegular.copyWith(
@@ -168,7 +168,7 @@ class BottomSection extends StatelessWidget {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text('coupon_discount'.tr, style: robotoRegular),
                 (couponController.coupon != null && couponController.coupon!.couponType == 'free_delivery') ? Text(
-                  'free_delivery'.tr, style: robotoRegular.copyWith(color: Theme.of(context).primaryColor),
+                  'free_delivery'.tr, style: robotoRegular.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color),
                 ) : Text(
                   '(-) ${PriceConverter.convertPrice(couponController.discount)}',
                   style: robotoRegular, textDirection: TextDirection.ltr,

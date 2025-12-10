@@ -160,10 +160,10 @@ class Store {
     posSystem = json['pos_system'];
     minimumShippingCharge = json['minimum_shipping_charge']?.toDouble();
     maximumShippingCharge = /*(json['maximum_shipping_charge'] != null && json['maximum_shipping_charge'] == 0) ? null : */
-        json['maximum_shipping_charge']?.toDouble();
+    json['maximum_shipping_charge']?.toDouble();
     perKmShippingCharge = json['per_km_shipping_charge'] != null ? json['per_km_shipping_charge'].toDouble() : 0;
-    open = json['open'];
-    active = json['active'];
+    open = json['open'] ?? 0;
+    active = json['active'] ?? false;
     featured = int.parse(json['featured'].toString());
     zoneId = json['zone_id'];
     deliveryTime = json['delivery_time'];

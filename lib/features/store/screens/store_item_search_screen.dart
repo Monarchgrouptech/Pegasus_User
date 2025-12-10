@@ -48,14 +48,14 @@ class _StoreItemSearchScreenState extends State<StoreItemSearchScreen> {
 
                   IconButton(
                     onPressed: () => Get.back(),
-                    icon: Icon(Icons.arrow_back_ios, color: Theme.of(context).primaryColor),
+                    icon: Icon(Icons.arrow_back_ios, color: Theme.of(context).textTheme.bodyMedium!.color),
                   ),
 
                   Expanded(child: TextField(
                     controller: _searchController,
                     style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeLarge),
                     textInputAction: TextInputAction.search,
-                    cursorColor: Theme.of(context).primaryColor,
+                    cursorColor: Theme.of(context).secondaryHeaderColor,
                     textAlignVertical: TextAlignVertical.center,
                     decoration: InputDecoration(
                       hintText: 'search_item_in_store'.tr,
@@ -71,7 +71,7 @@ class _StoreItemSearchScreenState extends State<StoreItemSearchScreen> {
                         borderSide: BorderSide(color: Theme.of(context).primaryColor.withValues(alpha: 0.3), width: 1),
                       ),
                       suffixIcon: IconButton(
-                        icon: Icon(Icons.search, color: Theme.of(context).hintColor, size: 25),
+                        icon: Icon(Icons.search, color: Theme.of(context).secondaryHeaderColor, size: 25),
                         onPressed: () => Get.find<StoreController>().getStoreSearchItemList(
                           _searchController.text.trim(), widget.storeID, 1, Get.find<StoreController>().searchType,
                         ),

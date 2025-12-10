@@ -339,7 +339,7 @@ class StoreController extends GetxController implements GetxService {
 
   void setTopOfferFilter(String type) {
     _topOfferFilter = type;
-   getTopOfferStoreList(true, false);
+    getTopOfferStoreList(true, false);
   }
 
   void setTopOfferSort(String sort) {

@@ -54,9 +54,9 @@ class CouponSection extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Row(children: [
-                    Text('add_voucher'.tr, style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor)),
+                    Text('add_voucher'.tr, style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium!.color)),
                     const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-                    Icon(Icons.add, size: 20, color: Theme.of(context).primaryColor),
+                    Icon(Icons.add, size: 20, color: Colors.green),
                   ]),
                 ),
               )
@@ -92,7 +92,7 @@ class CouponSection extends StatelessWidget {
                         ),
                         prefixIcon: Padding(
                           padding: const EdgeInsets.all( 15),
-                          child: Image.asset(Images.couponIcon, height: 10, width: 20, color: Theme.of(context).primaryColor),
+                          child: Image.asset(Images.couponIcon, height: 10, width: 20, color: Theme.of(context).textTheme.bodyMedium!.color),
                         ),
                       ),
                     ),
@@ -142,7 +142,7 @@ class CouponSection extends StatelessWidget {
                     ),
                     child: (couponController.discount! <= 0 && !couponController.freeDelivery) ? !couponController.isLoading ? Text(
                       'apply'.tr,
-                      style: robotoMedium.copyWith(color: Theme.of(context).cardColor),
+                      style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color),
                     ) : const SizedBox(
                       height: 30, width: 30,
                       child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.white)),

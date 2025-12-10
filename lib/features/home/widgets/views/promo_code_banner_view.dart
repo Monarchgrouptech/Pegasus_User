@@ -95,10 +95,10 @@ class _PromoCodeBannerViewState extends State<PromoCodeBannerView> {
                             radius: 50,
                             padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeSmall),
                             child: Row(mainAxisSize: MainAxisSize.min, children: [
-                              Icon(Icons.copy, color: Theme.of(context).primaryColor, size: 16),
+                              Icon(Icons.copy, color: Theme.of(context).textTheme.bodyMedium!.color, size: 16),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
-                              Flexible(child: Text(couponController.couponList![itemIndex].code ?? '', style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeSmall), maxLines: 1, overflow: TextOverflow.ellipsis)),
+                              Flexible(child: Text(couponController.couponList![itemIndex].code ?? '', style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium!.color, fontSize: Dimensions.fontSizeSmall), maxLines: 1, overflow: TextOverflow.ellipsis)),
                             ]),
                           ),
                         ),

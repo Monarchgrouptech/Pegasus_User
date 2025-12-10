@@ -113,7 +113,7 @@ class PopularStoreView extends StatelessWidget {
                                   ),
                                   child: Icon(
                                     isWished ? Icons.favorite : Icons.favorite_border,  size: 15,
-                                    color: isWished ? Theme.of(context).primaryColor : Theme.of(context).disabledColor,
+                                    color: isWished ? Colors.redAccent : Theme.of(context).disabledColor,
                                   ),
                                 ),
                               );

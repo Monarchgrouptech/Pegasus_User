@@ -29,7 +29,7 @@ class NotLoggedInScreen extends StatelessWidget {
 
             Text(
               'you_are_not_logged_in'.tr,
-              style: robotoBold.copyWith(fontSize: MediaQuery.of(context).size.height*0.023),
+              style: robotoBold.copyWith(fontSize: MediaQuery.of(context).size.height*0.023, color: Theme.of(context).textTheme.bodyLarge!.color),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: MediaQuery.of(context).size.height*0.01),

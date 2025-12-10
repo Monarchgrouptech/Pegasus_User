@@ -15,6 +15,21 @@ class NotAvailableWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Only show the overlay if store is actually unavailable
+    bool shouldShowOverlay = false;
+
+    if (isStore && store != null) {
+      // For stores: show overlay only if store is closed (open != 1 OR active != true)
+      shouldShowOverlay = store!.open != 1 || !store!.active!;
+    } else if (!isStore) {
+      // For items: always show overlay when NotAvailableWidget is used
+      shouldShowOverlay = true;
+    }
+
+    if (!shouldShowOverlay) {
+      return const SizedBox.shrink();
+    }
+
     return Positioned(
       top: 0, left: 0, bottom: 0, right: 0,
       child: Container(
@@ -27,7 +42,7 @@ class NotAvailableWidget extends StatelessWidget {
               : 'closed_now'.tr
               : 'not_available_now_break'.tr,
           textAlign: TextAlign.center,
-          style: robotoMedium.copyWith(color: Colors.white, fontSize: fontSize),
+          style: robotoMedium.copyWith(color: Colors.lightGreen, fontSize: fontSize),
         ),
       ),
     );

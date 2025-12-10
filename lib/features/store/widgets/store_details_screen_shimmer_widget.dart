@@ -351,7 +351,7 @@ class StoreDetailsScreenShimmerWidget extends StatelessWidget {
                               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
 
                                 Column(children: [
-                                  Icon(Icons.star, color: Theme.of(context).primaryColor),
+                                  Icon(Icons.star, color: Theme.of(context).secondaryHeaderColor),
                                   const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                                   Container(
                                     height: 10, width: 50,
@@ -363,7 +363,7 @@ class StoreDetailsScreenShimmerWidget extends StatelessWidget {
                                 ]),
 
                                 Column(children: [
-                                  Icon(Icons.location_on, color: Theme.of(context).primaryColor),
+                                  Icon(Icons.location_on, color: Theme.of(context).textTheme.bodyMedium!.color),
                                   const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                                   Container(
                                     height: 10, width: 50,
@@ -375,7 +375,7 @@ class StoreDetailsScreenShimmerWidget extends StatelessWidget {
                                 ]),
 
                                 Column(children: [
-                                  Icon(Icons.timer_rounded, color: Theme.of(context).primaryColor),
+                                  Icon(Icons.timer_rounded, color: Theme.of(context).textTheme.bodyMedium!.color),
                                   const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                                   Container(
                                     height: 10, width: 50,

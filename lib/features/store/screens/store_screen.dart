@@ -174,7 +174,7 @@ class _StoreScreenState extends State<StoreScreen> {
                     height: 50, width: 50,
                     decoration: BoxDecoration(shape: BoxShape.circle, color: Theme.of(context).primaryColor),
                     alignment: Alignment.center,
-                    child: Icon(Icons.chevron_left, color: Theme.of(context).cardColor),
+                    child: Icon(Icons.chevron_left, color: Theme.of(context).textTheme.bodyLarge!.color),
                   ),
                   onPressed: () => Get.back(),
                 ),
@@ -301,7 +301,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                           padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
                                           child: Icon(
                                             isWished ? Icons.favorite : Icons.favorite_border,
-                                            color: isWished ? Theme.of(context).primaryColor : Theme.of(context).disabledColor,
+                                            color: isWished ? Colors.redAccent : Theme.of(context).disabledColor,
                                             size: 24  - (scrollingRate * 4),
                                           ),
                                         ),
@@ -438,7 +438,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                                 storeController.categoryList![index].name!,
                                                 maxLines: 1, overflow: TextOverflow.ellipsis,
                                                 style: index == storeController.categoryIndex
-                                                    ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor)
+                                                    ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium!.color)
                                                     : robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
                                               ),
                                             ]),
@@ -485,7 +485,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                               border: OutlineInputBorder(borderRadius: BorderRadius.circular(Dimensions.radiusSmall), borderSide: BorderSide.none),
                                               filled: true, fillColor:Theme.of(context).cardColor,
                                               isDense: true,
-                                              prefixIcon: Icon(Icons.search, color: Theme.of(context).primaryColor.withValues(alpha: 0.50)),
+                                              prefixIcon: Icon(Icons.search, color: Theme.of(context).secondaryHeaderColor.withValues(alpha: 0.50)),
                                             ),
                                             onSubmitted: (String? value) {
                                               if(value!.isNotEmpty) {
@@ -715,7 +715,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                 color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
                               ),
                               padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
-                              child: Icon(Icons.search, size: 28, color: Theme.of(context).primaryColor),
+                              child: Icon(Icons.search, size: 28, color: Colors.lightBlue),
                             ),
                           ) : const SizedBox(),
                           const SizedBox(width: Dimensions.paddingSizeSmall),
@@ -737,7 +737,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                 border: Border.all(color: Theme.of(context).primaryColor, width: 1),
                               ),
                               padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
-                              child: Icon(Icons.filter_list, size: 24, color: Theme.of(context).primaryColor),
+                              child: Icon(Icons.filter_list, size: 24, color: Theme.of(context).textTheme.bodyLarge!.color),
                             ),
                           ),
 
@@ -773,7 +773,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                   Text(
                                     storeController.categoryList![index].name!,
                                     style: index == storeController.categoryIndex
-                                        ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor)
+                                        ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium!.color)
                                         : robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
                                   ),
                                 ]),

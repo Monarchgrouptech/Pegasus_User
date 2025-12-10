@@ -35,7 +35,7 @@ class CameraButtonSheetWidget extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
                 decoration: BoxDecoration(shape: BoxShape.circle, color: Theme.of(context).primaryColor.withValues(alpha: 0.2)),
-                child: Icon(Icons.camera_alt_outlined, size: 45, color: Theme.of(context).primaryColor),
+                child: Icon(Icons.camera_alt_outlined, size: 45, color: Theme.of(context).textTheme.bodyMedium!.color),
               ),
               const SizedBox(height: Dimensions.paddingSizeSmall),
 
@@ -54,7 +54,7 @@ class CameraButtonSheetWidget extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
                 decoration: BoxDecoration(shape: BoxShape.circle, color: Theme.of(context).primaryColor.withValues(alpha: 0.2)),
-                child: Icon(Icons.photo_library_outlined, size: 45, color: Theme.of(context).primaryColor),
+                child: Icon(Icons.photo_library_outlined, size: 45, color: Theme.of(context).textTheme.bodyLarge!.color),
               ),
               const SizedBox(height: Dimensions.paddingSizeSmall),
 

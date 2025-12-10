@@ -94,7 +94,7 @@ class StoreCardWidget extends StatelessWidget {
                             boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 5, spreadRadius: 1)],
                           ),
                           child: Row(children: [
-                            Icon(Icons.star, size: 15, color: Theme.of(context).primaryColor),
+                            Icon(Icons.star, size: 15, color: Colors.amber),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Text(
@@ -127,7 +127,7 @@ class StoreCardWidget extends StatelessWidget {
                           const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
                           Row(children: [
-                            Icon(Icons.location_on_outlined, size: 15, color: Theme.of(context).primaryColor),
+                            Icon(Icons.location_on_outlined, size: 15, color: Colors.green),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Flexible(
@@ -153,7 +153,7 @@ class StoreCardWidget extends StatelessWidget {
                             SizedBox(width: store!.freeDelivery! ? Dimensions.paddingSizeSmall : 0),
 
                             Row(children: [
-                              Icon(Icons.timer, size: 15, color: Theme.of(context).primaryColor),
+                              Icon(Icons.timer, size: 15, color: Colors.green),
                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                               Text(

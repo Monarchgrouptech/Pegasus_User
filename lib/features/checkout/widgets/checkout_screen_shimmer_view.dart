@@ -179,7 +179,7 @@ class CheckoutScreenShimmerView extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-                            Icon(Icons.add, color: Theme.of(context).cardColor),
+                            Icon(Icons.add, color: Theme.of(context).secondaryHeaderColor),
                           ]),
                           const SizedBox(height: Dimensions.paddingSizeSmall),
 
@@ -192,7 +192,7 @@ class CheckoutScreenShimmerView extends StatelessWidget {
                             ),
                             child: Row(children: [
 
-                              Icon(Icons.countertops, color: Theme.of(context).cardColor),
+                              Icon(Icons.countertops, color: Colors.blue),
                               const SizedBox(width: Dimensions.paddingSizeSmall),
 
                               Container(
@@ -424,7 +424,7 @@ class CheckoutShimmerView extends StatelessWidget {
                   Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
 
                     Row(children: [
-                      Icon(Icons.menu, color: Theme.of(context).cardColor),
+                      Icon(Icons.menu, color: Theme.of(context).textTheme.bodyMedium!.color),
                       const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                       Container(

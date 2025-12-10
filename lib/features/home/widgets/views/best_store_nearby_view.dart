@@ -193,7 +193,7 @@ class BestStoreNearbyView extends StatelessWidget {
 
                                             storeList[index].ratingCount! > 0 ? Row(mainAxisAlignment: MainAxisAlignment.start, children: [
 
-                                              Icon(Icons.star, size: 15, color: Theme.of(context).primaryColor),
+                                              Icon(Icons.star, size: 15, color: Colors.yellow),
                                               const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                                               Text(storeList[index].avgRating!.toStringAsFixed(1), style: robotoRegular),
@@ -643,7 +643,7 @@ class BestStoreNearbyShimmer extends StatelessWidget {
 
                                   Row(children: [
 
-                                    Icon(Icons.star, size: 15, color: Theme.of(context).primaryColor),
+                                    Icon(Icons.star, size: 15, color: Colors.yellow),
                                     const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                                     Container(

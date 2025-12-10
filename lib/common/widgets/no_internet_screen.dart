@@ -50,7 +50,7 @@ class NoInternetScreen extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(10),
                 child: InkWell(
-                  child: Center(child: Icon(Icons.refresh, size: 34, color: Theme.of(context).cardColor)),
+                  child: Center(child: Icon(Icons.refresh, size: 34, color: Theme.of(context).secondaryHeaderColor)),
                 ),
               ),
             ),

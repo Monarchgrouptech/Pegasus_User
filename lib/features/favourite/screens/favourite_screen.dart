@@ -61,7 +61,7 @@ class FavouriteScreenState extends State<FavouriteScreen> with SingleTickerProvi
               labelColor: Colors.green,
               unselectedLabelColor: Theme.of(context).disabledColor,
               unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
-              labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+              labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall),
               tabs: [
                 Tab(text: 'item'.tr),
                 Tab(text: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText!

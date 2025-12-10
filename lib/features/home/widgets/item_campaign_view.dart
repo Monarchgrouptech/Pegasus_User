@@ -97,10 +97,10 @@ class ItemCampaignView extends StatelessWidget {
                                       style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall), textDirection: TextDirection.ltr,
                                     ),
                                   ),
-                                  Icon(Icons.star, color: Theme.of(context).primaryColor, size: 12),
+                                  Icon(Icons.star, color: Colors.amber, size: 12),
                                   Text(
                                     campaignController.itemCampaignList![index].avgRating!.toStringAsFixed(1),
-                                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyLarge!.color),
                                   ),
                                 ],
                               ),
@@ -139,7 +139,7 @@ class ItemCampaignShimmer extends StatelessWidget {
           width: 130,
           margin: const EdgeInsets.only(right: Dimensions.paddingSizeSmall, bottom: 5),
           decoration: BoxDecoration(
-              color: Colors.white,
+              color: Theme.of(context).cardColor,
               borderRadius: BorderRadius.circular(Dimensions.radiusSmall),
               boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 10, spreadRadius: 1)]
           ),
@@ -181,4 +181,3 @@ class ItemCampaignShimmer extends StatelessWidget {
     );
   }
 }
-

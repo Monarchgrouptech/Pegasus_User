@@ -159,7 +159,7 @@ class HighlightStoreWidget extends StatelessWidget {
                           ),
                           child: Row(
                             children: [
-                              advertisement.isRatingActive == 1 ? Icon(Icons.star, color: Theme.of(context).cardColor, size: 15) : const SizedBox(),
+                              advertisement.isRatingActive == 1 ? Icon(Icons.star, color: Colors.amber, size: 15) : const SizedBox(),
                               SizedBox(width: advertisement.isRatingActive == 1 ? 5 : 0),
 
                               advertisement.isRatingActive == 1 ? Text('${advertisement.averageRating?.toStringAsFixed(1)}', style: robotoBold.copyWith(color: Theme.of(context).cardColor)) : const SizedBox(),
@@ -366,7 +366,7 @@ class _HighlightVideoWidgetState extends State<HighlightVideoWidget> {
                         color: Theme.of(context).primaryColor,
                         borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
                       ),
-                      child: Icon(Icons.arrow_forward, color: Theme.of(context).cardColor, size: 20),
+                      child: Icon(Icons.arrow_forward, color: Theme.of(context).textTheme.bodyLarge!.color, size: 20),
                     ),
                   ),
 
@@ -553,7 +553,7 @@ class AdvertisementShimmer extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
                                       color: Theme.of(context).shadowColor,
                                     ),
-                                    child:  Icon(Icons.arrow_forward_rounded, size: 20, color: Colors.white.withValues(alpha: 0.8),),
+                                    child:  Icon(Icons.arrow_forward_rounded, size: 20, color: Theme.of(context).textTheme.bodyMedium!.color),
                                   ),
                                 )
                               ],)

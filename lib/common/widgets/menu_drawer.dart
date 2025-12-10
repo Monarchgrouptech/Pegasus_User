@@ -240,7 +240,7 @@ class MenuDrawerState extends State<MenuDrawer> with SingleTickerProviderStateMi
                             borderRadius: BorderRadius.circular(Dimensions.radiusSmall),
                             color: index != _menuList.length-1 ? Theme.of(context).primaryColor : AuthHelper.isLoggedIn() ? Theme.of(context).colorScheme.error : Colors.green,
                           ),
-                          child: Image.asset(_menuList[index].icon, color: Colors.white, height: 30, width: 30),
+                          child: Image.asset(_menuList[index].icon, color: Colors.green, height: 30, width: 30),
                         ),
                         const SizedBox(width: Dimensions.paddingSizeSmall),
 

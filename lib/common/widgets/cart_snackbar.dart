@@ -16,7 +16,7 @@ void showCartSnackBar() {
     backgroundColor: Colors.green,
     behavior: SnackBarBehavior.floating,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(Dimensions.radiusSmall)),
-    content: Text('item_added_to_cart'.tr, style: robotoMedium.copyWith(color: Colors.white)),
+    content: Text('item_added_to_cart'.tr, style: robotoMedium.copyWith(color: Colors.green)),
     action: SnackBarAction(label: 'view_cart'.tr, onPressed: () => Get.toNamed(RouteHelper.getCartRoute()), textColor: Colors.white),
   ));
 }

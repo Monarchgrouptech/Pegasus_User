@@ -156,7 +156,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
            onTap: () => Get.toNamed(RouteHelper.getStoreReviewRoute(store!.id, store!.name, store!)),
            child: Column(children: [
              Row(children: [
-               Icon(Icons.star, color: Theme.of(context).primaryColor, size: 20),
+               Icon(Icons.star, color: Colors.amber, size: 20),
                const SizedBox(width: Dimensions.paddingSizeExtraSmall),
                Text(
                  store!.avgRating!.toStringAsFixed(1),
@@ -205,7 +205,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
          (store!.delivery! && store!.freeDelivery!) ? const Expanded(child: SizedBox()) : const SizedBox(),
 
          (store!.delivery! && store!.freeDelivery!) ? Column(children: [
-           Icon(Icons.money_off, color: Theme.of(context).primaryColor, size: 20),
+           Icon(Icons.money_off, color: Theme.of(context).textTheme.bodyLarge!.color, size: 20),
            const SizedBox(width: Dimensions.paddingSizeExtraSmall),
            Text('free_delivery'.tr, style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: textColor)),
          ]) : const SizedBox(),
@@ -218,7 +218,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
          onTap: () => Get.toNamed(RouteHelper.getStoreReviewRoute(store!.id, store!.name, store!)),
          child: Column(children: [
            Row(children: [
-             Icon(Icons.star, color: Theme.of(context).primaryColor, size: 20),
+             Icon(Icons.star, color: Colors.amber, size: 20),
              const SizedBox(width: Dimensions.paddingSizeExtraSmall),
              Text(
                store!.avgRating!.toStringAsFixed(1),
@@ -243,7 +243,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
            storeName: store!.name,
          )),
          child: Column(children: [
-           Icon(Icons.location_on, color: Theme.of(context).primaryColor, size: 20),
+           Icon(Icons.location_on, color: Colors.red, size: 20),
            const SizedBox(width: Dimensions.paddingSizeExtraSmall),
            Text('location'.tr, style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: textColor)),
          ]),
@@ -252,7 +252,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
 
        Column(children: [
          Row(children: [
-           Icon(Icons.timer, color: Theme.of(context).primaryColor, size: 20),
+           Icon(Icons.timer, color: Colors.blue, size: 20),
            const SizedBox(width: Dimensions.paddingSizeExtraSmall),
            Text(
              store!.deliveryTime!,
@@ -264,7 +264,7 @@ class StoreDescriptionViewWidget extends StatelessWidget {
        ]),
        (store!.delivery! && store!.freeDelivery!) ? const Expanded(child: SizedBox()) : const SizedBox(),
        (store!.delivery! && store!.freeDelivery!) ? Column(children: [
-         Icon(Icons.money_off, color: Theme.of(context).primaryColor, size: 20),
+         Icon(Icons.money_off, color: Theme.of(context).textTheme.bodyMedium!.color, size: 20),
          const SizedBox(width: Dimensions.paddingSizeExtraSmall),
          Text('free_delivery'.tr, style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: textColor)),
        ]) : const SizedBox(),
