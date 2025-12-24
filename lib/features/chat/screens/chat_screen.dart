@@ -375,7 +375,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                             padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
                                             child: Image.asset(
                                               showMessageSuggestion ? Images.suggestionMessage : Images.send, width: 25, height: 25,
-                                              color: chatController.isSendButtonActive || showMessageSuggestion ? Theme.of(context).primaryColor : Theme.of(context).hintColor,
+                                              color: chatController.isSendButtonActive || showMessageSuggestion ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).hintColor,
                                             ),
                                           ),
                                         );
@@ -525,7 +525,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           },
                           child: Padding(
                             padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
-                            child: Image.asset(Images.image, width: 25, height: 25, color: Theme.of(context).primaryColor),
+                            child: Image.asset(Images.image, width: 25, height: 25, color: Theme.of(context).textTheme.bodyMedium?.color),
                           ),
                         ),
 
@@ -607,7 +607,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
                               child: Image.asset(
                                showMessageSuggestion ? Images.suggestionMessage : Images.send, width: 25, height: 25,
-                                color: chatController.isSendButtonActive || showMessageSuggestion ? Theme.of(context).primaryColor : Theme.of(context).hintColor,
+                                color: chatController.isSendButtonActive || showMessageSuggestion ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).hintColor,
                               ),
                             ),
                           );

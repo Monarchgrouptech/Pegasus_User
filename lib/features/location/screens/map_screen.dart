@@ -98,7 +98,7 @@ class MapScreenState extends State<MapScreen> {
                           child: Container(
                             padding: const EdgeInsets.all( Dimensions.paddingSizeSmall),
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(50), color: Theme.of(context).cardColor),
-                            child: Icon(Icons.my_location_outlined, color: Theme.of(context).primaryColor, size: 25),
+                            child: Icon(Icons.my_location_outlined, color: Theme.of(context).textTheme.bodyMedium?.color, size: 25),
                           ),
                         ),
                       ),
@@ -145,7 +145,7 @@ class MapScreenState extends State<MapScreen> {
                                 Icon(
                                   widget.address.addressType == 'home' ? Icons.home_outlined : widget.address.addressType == 'office'
                                       ? Icons.work_outline : Icons.location_on,
-                                  size: 30, color: Theme.of(context).primaryColor,
+                                  size: 30, color: Theme.of(context).textTheme.bodyMedium?.color,
                                 ),
                                 const SizedBox(width: Dimensions.paddingSizeSmall),
 
@@ -165,7 +165,7 @@ class MapScreenState extends State<MapScreen> {
                               const SizedBox(height: Dimensions.paddingSizeSmall),
 
                               Text('- ${widget.address.contactPersonName}', style: robotoMedium.copyWith(
-                                color: Theme.of(context).primaryColor,
+                                color: Theme.of(context).textTheme.bodyMedium?.color,
                                 fontSize: Dimensions.fontSizeLarge,
                               )),
 

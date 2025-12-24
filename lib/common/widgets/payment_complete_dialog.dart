@@ -40,7 +40,7 @@ class PaymentCompleteDialog extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeSmall),
               child: Text(
                 title!, textAlign: TextAlign.center,
-                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor),
+                style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
               ),
             ) : const SizedBox(),
 
@@ -49,7 +49,7 @@ class PaymentCompleteDialog extends StatelessWidget {
             const SizedBox(height: Dimensions.paddingSizeSmall,),
             Text(shortDescription, style: robotoMedium.copyWith(
                 fontSize: Dimensions.fontSizeDefault,
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).textTheme.bodyMedium?.color,
             ),
                 textAlign: TextAlign.center),
             const SizedBox(height: Dimensions.paddingSizeExtraLarge),

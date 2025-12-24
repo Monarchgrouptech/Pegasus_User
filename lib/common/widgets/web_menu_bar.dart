@@ -47,17 +47,17 @@ class WebMenuBar extends StatelessWidget implements PreferredSizeWidget {
                             AuthHelper.isLoggedIn() ? Icon(
                               AddressHelper.getUserAddressFromSharedPref()!.addressType == 'home' ? Icons.home_filled
                                   : AddressHelper.getUserAddressFromSharedPref()!.addressType == 'office' ? Icons.work : Icons.location_on,
-                              size: 16, color: Theme.of(context).primaryColor,
+                              size: 16, color: Theme.of(context).textTheme.bodyMedium?.color,
                             ) : Icon(
                               Icons.location_on,
-                              size: 16, color: Theme.of(context).primaryColor,
+                              size: 16, color: Theme.of(context).textTheme.bodyMedium?.color,
                             ),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Text(
                               '${AuthHelper.isLoggedIn() ? AddressHelper.getUserAddressFromSharedPref()!.addressType!.tr : 'your_location'.tr}: ',
                               style: robotoMedium.copyWith(
-                                color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeExtraSmall,
+                                color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeExtraSmall,
                               ),
                               maxLines: 1, overflow: TextOverflow.ellipsis,
                             ),
@@ -201,7 +201,7 @@ class WebMenuBar extends StatelessWidget implements PreferredSizeWidget {
                             border: Border.all(color: Theme.of(context).primaryColor, width: 0.5),
                           ),
                           padding: const EdgeInsets.all(3),
-                          child: Icon(themeController.darkTheme ? CupertinoIcons.moon_stars_fill : CupertinoIcons.sun_min_fill, size: 18, color: Theme.of(context).primaryColor),
+                          child: Icon(themeController.darkTheme ? CupertinoIcons.moon_stars_fill : CupertinoIcons.sun_min_fill, size: 18, color: Theme.of(context).textTheme.bodyMedium?.color),
                         ),
                       );
                     }
@@ -350,7 +350,7 @@ class MenuButton extends StatelessWidget {
     return TextHover(builder: (hovered) {
       return InkWell(
         onTap: onTap as void Function()?,
-        child: Text(title, style: robotoRegular.copyWith(color: hovered ? Theme.of(context).primaryColor : null)),
+        child: Text(title, style: robotoRegular.copyWith(color: hovered ? Theme.of(context).textTheme.bodyMedium?.color : null)),
       );
     });
   }
@@ -371,7 +371,7 @@ class MenuIconButton extends StatelessWidget {
           return Stack(clipBehavior: Clip.none, children: [
             Icon(
               icon,
-              color: hovered ? Theme.of(context).primaryColor : Theme.of(context).textTheme.bodyLarge!.color,
+              color: hovered ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).textTheme.bodyLarge!.color,
             ),
             (isCart && cartController.cartList.isNotEmpty) ? Positioned(
               top: -5, right: -5,

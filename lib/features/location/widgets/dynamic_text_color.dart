@@ -38,15 +38,15 @@ class DynamicTextColor extends StatelessWidget {
           ),
           TextSpan(
             text: '$thirdLastWord ',
-            style: TextStyle(color: Theme.of(context).primaryColor),
+            style: TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color),
           ),
           TextSpan(
             text: '$secondLastWord ',
-            style: TextStyle(color: Theme.of(context).primaryColor),
+            style: TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color),
           ),
           TextSpan(
             text: lastWord,
-            style: TextStyle(color: Theme.of(context).primaryColor),
+            style: TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color),
           ),
         ] : [
           TextSpan(

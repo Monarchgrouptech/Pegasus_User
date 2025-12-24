@@ -53,7 +53,7 @@ class SearchResultWidgetState extends State<SearchResultWidget> with TickerProvi
           child: Row(children: [
             Text(
               length.toString(),
-              style: robotoBold.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeSmall),
+              style: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeSmall),
             ),
             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
             Expanded(child: Text(
@@ -89,7 +89,7 @@ class SearchResultWidgetState extends State<SearchResultWidget> with TickerProvi
           labelColor: Theme.of(context).primaryColor,
           unselectedLabelColor: Theme.of(context).disabledColor,
           unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
-          labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+          labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
 
           tabs: [
             Tab(text: 'item'.tr),

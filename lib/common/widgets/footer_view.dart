@@ -145,7 +145,7 @@ class _FooterViewState extends State<FooterView> {
                                 _launchURL(url);
                               }
                             },
-                            child: Image.asset(icon, height: 30, width: 30, fit: BoxFit.contain, color: Theme.of(context).primaryColor),
+                            child: Image.asset(icon, height: 30, width: 30, fit: BoxFit.contain, color: Theme.of(context).textTheme.bodyMedium?.color),
                           ),
                         );
                       },
@@ -320,7 +320,7 @@ class FooterButton extends StatelessWidget {
             Get.toNamed(route);
           }
         } : null,
-        child: Text(title, style: hovered ? robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeExtraSmall)
+        child: Text(title, style: hovered ? robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeExtraSmall)
             : robotoRegular.copyWith(fontSize: Dimensions.fontSizeExtraSmall)),
       );
     });

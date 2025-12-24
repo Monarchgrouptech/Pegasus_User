@@ -124,8 +124,8 @@ class _SubscriptionSuccessOrFailedScreenState extends State<SubscriptionSuccessO
                             onPressed: () => Get.offAllNamed(RouteHelper.getInitialRoute()),
                             child: Text(
                               'continue_to_home_page'.tr,
-                              style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeDefault,
-                                  decoration: TextDecoration.underline, decorationColor: Theme.of(context).primaryColor),
+                              style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeDefault,
+                                  decoration: TextDecoration.underline, decorationColor: Theme.of(context).textTheme.bodyMedium?.color),
                             ),
                           ),
 
@@ -155,8 +155,8 @@ class _SubscriptionSuccessOrFailedScreenState extends State<SubscriptionSuccessO
                             },
                             child: Text(
                               'try_again'.tr,
-                              style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeDefault,
-                                  decoration: TextDecoration.underline, decorationColor: Theme.of(context).primaryColor),
+                              style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeDefault,
+                                  decoration: TextDecoration.underline, decorationColor: Theme.of(context).textTheme.bodyMedium?.color),
                             ),
                           ),
 

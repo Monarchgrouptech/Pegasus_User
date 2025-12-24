@@ -178,7 +178,7 @@ class MessageBubbleWidget extends StatelessWidget {
                   Text('#${order.id}', style: robotoBold),
                 ]),
 
-                Text('${'total'.tr}: ${PriceConverter.convertPrice(order.orderAmount ?? 0)}', style: robotoMedium.copyWith(color: Theme.of(context).primaryColor)),
+                Text('${'total'.tr}: ${PriceConverter.convertPrice(order.orderAmount ?? 0)}', style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color)),
 
               ]),
             ),

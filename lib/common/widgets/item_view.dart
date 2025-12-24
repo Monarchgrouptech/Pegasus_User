@@ -138,7 +138,7 @@ class NewOnShimmerView extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Theme.of(context).cardColor.withValues(alpha: 0.8),
                       ),
-                      child: Icon(Icons.favorite_border, color: Theme.of(context).primaryColor, size: 20),
+                      child: Icon(Icons.favorite_border, color: Theme.of(context).textTheme.bodyMedium?.color, size: 20),
                     ),
                   ),
                 ]),

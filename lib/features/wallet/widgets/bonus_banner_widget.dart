@@ -46,7 +46,7 @@ class BonusBannerWidget extends StatelessWidget {
 
                         Text(
                           walletController.fundBonusList![index].title!, maxLines: 1,
-                          style: robotoBold.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).primaryColor, overflow: TextOverflow.ellipsis),
+                          style: robotoBold.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).textTheme.bodyMedium?.color, overflow: TextOverflow.ellipsis),
                         ),
                         const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
@@ -59,7 +59,7 @@ class BonusBannerWidget extends StatelessWidget {
                         Text(
                           '${'add_fund_to_wallet_minimum'.tr} ${PriceConverter.convertPrice(walletController.fundBonusList![index].minimumAddAmount)} ${'and_enjoy'.tr} ${walletController.fundBonusList![index].bonusAmount} '
                               '${walletController.fundBonusList![index].bonusType == 'amount' ? Get.find<SplashController>().configModel!.currencySymbol : '%'} ${'bonus'.tr}',
-                          style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                          style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                           maxLines: 2, overflow: TextOverflow.ellipsis,
                         ),
                       ])),

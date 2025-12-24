@@ -233,7 +233,7 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                               Text(
                                 catController.subCategoryList![index].name!,
                                 style: index == catController.subCategoryIndex
-                                    ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor)
+                                    ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color)
                                     : robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
                               ),
                             ]),
@@ -248,12 +248,12 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                     color: Theme.of(context).cardColor,
                     child: TabBar(
                       controller: _tabController,
-                      indicatorColor: Theme.of(context).primaryColor,
+                      indicatorColor: Theme.of(context).textTheme.bodyMedium?.color,
                       indicatorWeight: 3,
-                      labelColor: Theme.of(context).primaryColor,
+                      labelColor: Theme.of(context).textTheme.bodyMedium?.color,
                       unselectedLabelColor: Theme.of(context).disabledColor,
                       unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
-                      labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                      labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                       tabs: [
                         Tab(text: 'item'.tr),
                         Tab(text: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText! ? 'restaurants'.tr : 'stores'.tr),
@@ -349,7 +349,7 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                           Text(
                             catController.subCategoryList![index].name!,
                             style: index == catController.subCategoryIndex
-                                ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor)
+                                ? robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color)
                                 : robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
                           ),
                         ]),
@@ -364,12 +364,12 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                 color: Theme.of(context).cardColor,
                 child: TabBar(
                   controller: _tabController,
-                  indicatorColor: Theme.of(context).primaryColor,
+                  indicatorColor: Theme.of(context).textTheme.bodyMedium?.color,
                   indicatorWeight: 3,
-                  labelColor: Theme.of(context).primaryColor,
+                  labelColor: Theme.of(context).textTheme.bodyMedium?.color,
                   unselectedLabelColor: Theme.of(context).disabledColor,
                   unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
-                  labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                  labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                   tabs: [
                     Tab(text: 'item'.tr),
                     Tab(text: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText! ? 'restaurants'.tr : 'stores'.tr),

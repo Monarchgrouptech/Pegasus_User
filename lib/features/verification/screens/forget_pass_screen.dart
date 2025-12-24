@@ -161,7 +161,7 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
                         style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).textTheme.bodyLarge!.color),
                       ),
                       TextSpan(
-                        text: 'login_in'.tr, style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeDefault, decoration: TextDecoration.underline),
+                        text: 'login_in'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeDefault, decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () => Get.back(),
                       ),
@@ -202,7 +202,7 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
                         style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).hintColor),
                       ),
                       TextSpan(
-                        text: 'guest'.tr, style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeDefault, decoration: TextDecoration.underline),
+                        text: 'guest'.tr, style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeDefault, decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () => Get.offAllNamed(RouteHelper.getInitialRoute()),
                       ),

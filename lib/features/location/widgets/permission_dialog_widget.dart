@@ -20,7 +20,7 @@ class PermissionDialogWidget extends StatelessWidget {
           width: 500,
           child: Column(mainAxisSize: MainAxisSize.min, children: [
 
-            Icon(Icons.add_location_alt_rounded, color: Theme.of(context).primaryColor, size: 100),
+            Icon(Icons.add_location_alt_rounded, color: Theme.of(context).textTheme.bodyMedium?.color, size: 100),
             const SizedBox(height: Dimensions.paddingSizeLarge),
 
             Text(

@@ -99,7 +99,7 @@ class _ItemReviewWidgetState extends State<ItemReviewWidget> {
                       ),
                       Text(
                         widget.orderDetailsList[index].quantity.toString(),
-                        style: robotoMedium.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeSmall),
+                        style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color, fontSize: Dimensions.fontSizeSmall),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ]),

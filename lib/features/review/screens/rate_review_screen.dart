@@ -44,7 +44,7 @@ class RateReviewScreenState extends State<RateReviewScreen> with TickerProviderS
             child: TabBar(
               controller: _tabController,
               labelColor: Theme.of(context).textTheme.bodyLarge!.color,
-              indicatorColor: Theme.of(context).primaryColor,
+              indicatorColor: Theme.of(context).textTheme.bodyMedium?.color,
               indicatorWeight: 3,
               unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
               labelStyle: robotoMedium.copyWith(fontSize: Dimensions.fontSizeSmall),

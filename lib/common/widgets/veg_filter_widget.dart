@@ -19,7 +19,7 @@ class VegFilterWidget extends StatelessWidget {
     for(int i=0; i < Get.find<ItemController>().itemTypeList.length; i++){
       entryList.add(PopupMenuItem<int>(value: i, child: Row(children: [
         Get.find<ItemController>().itemTypeList[i] == type
-            ? Icon(Icons.radio_button_checked_sharp, color: Theme.of(context).primaryColor)
+            ? Icon(Icons.radio_button_checked_sharp, color: Theme.of(context).textTheme.bodyMedium?.color)
             : Icon(Icons.radio_button_off, color: Theme.of(context).disabledColor),
         const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 

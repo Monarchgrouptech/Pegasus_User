@@ -56,13 +56,13 @@ class CustomButton extends StatelessWidget {
         ) : Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           icon != null ? Padding(
             padding: const EdgeInsets.only(right: Dimensions.paddingSizeExtraSmall),
-            child: Icon(icon, color: iconColor ?? (transparent ? Theme.of(context).primaryColor : Theme.of(context).cardColor)),
+            child: Icon(icon, color: iconColor ?? (transparent ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).cardColor)),
           ) : const SizedBox(),
           Text(buttonText, textAlign: TextAlign.center, style: isBold ? robotoBold.copyWith(
-            color: textColor ?? (transparent ? Theme.of(context).primaryColor : Colors.white),
+            color: textColor ?? (transparent ? Theme.of(context).textTheme.bodyMedium?.color : Colors.white),
             fontSize: fontSize ?? Dimensions.fontSizeLarge,
           ) : robotoRegular.copyWith(
-            color: textColor ?? (transparent ? Theme.of(context).primaryColor : Colors.white),
+            color: textColor ?? (transparent ? Theme.of(context).textTheme.bodyMedium?.color : Colors.white),
             fontSize: fontSize ?? Dimensions.fontSizeLarge,
           )),
         ]),

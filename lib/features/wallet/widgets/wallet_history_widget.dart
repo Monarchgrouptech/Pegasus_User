@@ -47,7 +47,7 @@ class WalletHistoryWidget extends StatelessWidget {
 
                 Text(
                   filterName,
-                  style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                  style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                 ),
 
               ]),

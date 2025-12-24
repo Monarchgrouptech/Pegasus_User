@@ -96,7 +96,7 @@ class _WebLandingPageState extends State<WebLandingPage> {
 
                   Text(
                     splashController.landingModel?.fixedHeaderSubTitle ?? '',
-                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).primaryColor),
+                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).textTheme.bodyMedium?.color),
                   ),
                 ])),
                 Expanded(child: ClipPath(clipper: CustomPath(isRtl: _isRtl), child: ClipRRect(
@@ -176,7 +176,7 @@ class _WebLandingPageState extends State<WebLandingPage> {
                                   _controller.text = _address!.address ?? '';
                                   Get.back();
                                 },
-                                icon: Icon(Icons.my_location, color: Theme.of(context).primaryColor),
+                                icon: Icon(Icons.my_location, color: Theme.of(context).textTheme.bodyMedium?.color),
                               ),
                             ),
                             style: Theme.of(context).textTheme.displayMedium!.copyWith(
@@ -282,7 +282,7 @@ class _WebLandingPageState extends State<WebLandingPage> {
 
             Text(
               splashController.landingModel?.fixedModuleTitle ?? '',
-              style: robotoBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor),
+              style: robotoBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
             ),
             Text(
               splashController.landingModel?.fixedModuleSubTitle ?? '',
@@ -439,7 +439,7 @@ class _WebLandingPageState extends State<WebLandingPage> {
                                     ),
                                     child: Text(
                                       splashController.landingModel?.availableZoneList?[index].displayName ?? '',
-                                      style: robotoBold.copyWith(color: splashController.hoverStates[index] ? Theme.of(context).primaryColor :  Theme.of(context).textTheme.bodyMedium!.color!),
+                                      style: robotoBold.copyWith(color: splashController.hoverStates[index] ? Theme.of(context).textTheme.bodyMedium?.color :  Theme.of(context).textTheme.bodyMedium!.color!),
                                       maxLines: 1, overflow: TextOverflow.ellipsis,
                                     ),
                                   ),

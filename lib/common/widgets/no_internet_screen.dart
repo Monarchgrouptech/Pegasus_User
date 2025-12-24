@@ -46,7 +46,7 @@ class NoInternetScreen extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Theme.of(context).primaryColor,
+                  color: Theme.of(context).textTheme.bodyMedium?.color,
                 ),
                 padding: const EdgeInsets.all(10),
                 child: InkWell(

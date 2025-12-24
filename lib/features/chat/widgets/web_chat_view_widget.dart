@@ -496,7 +496,7 @@ class _WebChatViewWidgetState extends State<WebChatViewWidget> with TickerProvid
                                 borderRadius: const BorderRadius.all(Radius.circular(Dimensions.radiusDefault)),
                                 border: Border.all(color: Theme.of(context).disabledColor.withValues(alpha: 0.6)),
                               ),
-                              child: Image.asset(Images.image, width: 25, height: 25, color: widget.chatController.chatImage.isNotEmpty ? Theme.of(context).primaryColor : Theme.of(context).hintColor,),
+                              child: Image.asset(Images.image, width: 25, height: 25, color: widget.chatController.chatImage.isNotEmpty ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).hintColor,),
                             ),
                           ),
                           const SizedBox(width: Dimensions.paddingSizeDefault),
@@ -524,7 +524,7 @@ class _WebChatViewWidgetState extends State<WebChatViewWidget> with TickerProvid
                                 ),
                                 child: chatController.isLoading ? const SizedBox(height: 25, width: 25, child: CircularProgressIndicator()) : Image.asset(
                                   Images.sendIconWeb, width: 25, height: 25,
-                                  color: chatController.isSendButtonActive ? Theme.of(context).primaryColor : Theme.of(context).hintColor,
+                                  color: chatController.isSendButtonActive ? Theme.of(context).textTheme.bodyMedium?.color : Theme.of(context).hintColor,
                                 ),
                               ),
                             );

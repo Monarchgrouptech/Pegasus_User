@@ -146,7 +146,7 @@ class _PickMapScreenState extends State<PickMapScreen> {
                         onPressed: () => Get.find<LocationController>().checkPermission(() {
                           Get.find<LocationController>().getCurrentLocation(false, mapController: _mapController);
                         }),
-                        child: Icon(Icons.my_location, color: Theme.of(context).primaryColor),
+                        child: Icon(Icons.my_location, color: Theme.of(context).textTheme.bodyMedium?.color),
                       ),
                     ),
                   ]),
@@ -211,7 +211,7 @@ class _PickMapScreenState extends State<PickMapScreen> {
                 onPressed: () => Get.find<LocationController>().checkPermission(() {
                   Get.find<LocationController>().getCurrentLocation(false, mapController: _mapController);
                 }),
-                child: Icon(Icons.my_location, color: Theme.of(context).primaryColor),
+                child: Icon(Icons.my_location, color: Theme.of(context).textTheme.bodyMedium?.color),
               ),
             ),
 

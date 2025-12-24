@@ -47,7 +47,7 @@ class NoDataScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radiusDefault),
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).textTheme.bodyMedium?.color,
               ),
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: Row(

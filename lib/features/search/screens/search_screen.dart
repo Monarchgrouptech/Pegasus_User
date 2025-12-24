@@ -146,7 +146,7 @@ class SearchScreenState extends State<SearchScreen> with TickerProviderStateMixi
                                   labelColor: Theme.of(context).primaryColor,
                                   unselectedLabelColor: Theme.of(context).disabledColor,
                                   unselectedLabelStyle: robotoRegular.copyWith(color: Theme.of(context).disabledColor, fontSize: Dimensions.fontSizeSmall),
-                                  labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                                  labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                                   labelPadding: const EdgeInsets.symmetric(horizontal: Dimensions.radiusDefault, vertical: 0 ),
                                   isScrollable: true,
                                   indicatorSize: TabBarIndicatorSize.tab,
@@ -274,7 +274,7 @@ class SearchScreenState extends State<SearchScreen> with TickerProviderStateMixi
                                 },
                                 child: Row(
                                   children: [
-                                    Text(searchController.historyList[index], style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor), maxLines: 1, overflow: TextOverflow.ellipsis),
+                                    Text(searchController.historyList[index], style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium?.color), maxLines: 1, overflow: TextOverflow.ellipsis),
                                     const SizedBox(width: Dimensions.paddingSizeSmall),
 
                                     InkWell(

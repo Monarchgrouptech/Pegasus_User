@@ -224,7 +224,7 @@ class _ItemBottomSheetState extends State<ItemBottomSheet> {
                                     padding: const EdgeInsets.fromLTRB(0, 5, 5, 5),
                                     child: Text(
                                       item.storeName ?? '',
-                                      style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                                      style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                                     ),
                                   ),
                                 ),
@@ -304,7 +304,7 @@ class _ItemBottomSheetState extends State<ItemBottomSheet> {
                                   ),
                                   child: Get.find<SplashController>().configModel!.moduleConfig!.module!.unit! ? Text(
                                     item.unitType ?? '',
-                                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+                                    style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
                                   ) : Row(children: [
                                     Image.asset(item.veg == 1 ? Images.vegLogo : Images.nonVegLogo, height: 20, width: 20),
                                     const SizedBox(width: Dimensions.paddingSizeSmall),
@@ -423,7 +423,7 @@ class _ItemBottomSheetState extends State<ItemBottomSheet> {
                           double? cost = PriceConverter.convertWithDiscount((price! * itemController.quantity!), discount, discountType);
                           double withAddonCost = cost! + addonsCost;
                           return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                            Text('${'total_amount'.tr}:', style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).primaryColor)),
+                            Text('${'total_amount'.tr}:', style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).textTheme.bodyMedium?.color)),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Row(children: [
@@ -435,7 +435,7 @@ class _ItemBottomSheetState extends State<ItemBottomSheet> {
 
                               PriceConverter.convertAnimationPrice(
                                 withAddonCost,
-                                textStyle: robotoBold.copyWith(color: Theme.of(context).primaryColor),
+                                textStyle: robotoBold.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color),
                               ),
                             ]),
                           ]);
@@ -740,7 +740,7 @@ class AddonView extends StatelessWidget {
                         Expanded(
                           child: InkWell(
                             onTap: () => itemController.setAddOnQuantity(true, index),
-                            child: Center(child: Icon(Icons.add, size: 18, color: Theme.of(context).primaryColor)),
+                            child: Center(child: Icon(Icons.add, size: 18, color: Theme.of(context).textTheme.bodyMedium?.color)),
                           ),
                         ),
                       ]),
@@ -888,7 +888,7 @@ class NewVariationView extends StatelessWidget {
               style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).disabledColor),
             ) : Text(
               'select_one'.tr,
-              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+              style: robotoMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).textTheme.bodyMedium?.color),
             ),
             SizedBox(height: item!.foodVariations![index].multiSelect! ? Dimensions.paddingSizeExtraSmall : 0),
 
@@ -906,12 +906,12 @@ class NewVariationView extends StatelessWidget {
                   child: InkWell(
                     onTap: ()=> itemController.showMoreSpecificSection(index),
                     child: Row(children: [
-                      Icon(Icons.expand_more, size: 18, color: Theme.of(context).primaryColor),
+                      Icon(Icons.expand_more, size: 18, color: Theme.of(context).textTheme.bodyMedium?.color),
                       const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                       Text(
                         '${'view'.tr} ${item!.foodVariations![index].variationValues!.length - 4} ${'more_option'.tr}',
-                        style: robotoMedium.copyWith(color: Theme.of(context).primaryColor),
+                        style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyMedium?.color),
                       ),
                     ]),
                   ),

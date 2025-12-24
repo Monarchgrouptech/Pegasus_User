@@ -207,7 +207,7 @@ class ItemWidget extends StatelessWidget {
 
                           !isStore && (item!.ratingCount! > 0) ? Row(children: [
 
-                            Icon(Icons.star, size: 16, color: Theme.of(context).primaryColor),
+                            Icon(Icons.star, size: 16, color: Theme.of(context).textTheme.bodyMedium?.color),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Text(
@@ -227,7 +227,7 @@ class ItemWidget extends StatelessWidget {
 
                           isStore && (store != null && store!.ratingCount! > 0) ? Row(children: [
 
-                            Icon(Icons.star, size: 16, color: Theme.of(context).primaryColor),
+                            Icon(Icons.star, size: 16, color: Theme.of(context).textTheme.bodyMedium?.color),
                             const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
                             Text(
