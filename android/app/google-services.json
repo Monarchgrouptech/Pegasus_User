@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "602599280130",
+    "project_id": "pegasus-ecommerce-fed19",
+    "storage_bucket": "pegasus-ecommerce-fed19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602599280130:android:44f6adc3f3ed147513e11b",
+        "android_client_info": {
+          "package_name": "com.Pegasus.pegasus_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602599280130-gj409g6j9cpne8513hp6g7p35lb91qmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Pegasus.pegasus_user",
+            "certificate_hash": "fed343b051fc652db3932d5675b0ed8b94ee8325"
+          }
+        },
+        {
+          "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602599280130-sgb79qd6islsfikbunrjmfnm9b9tn10m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602599280130-rpfrdeb6od84b7qqiha05ldns5emvvrn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pegasus.pegasus-user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
