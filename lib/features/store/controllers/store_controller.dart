@@ -603,7 +603,7 @@ class StoreController extends GetxController implements GetxService {
     return false;
   }
 
-  bool isOpenNow(Store store) => store.open == 1 && store.active!;
+  bool isOpenNow(Store store) => store.storeOpeningTime != 'closed' && store.active!;
 
   double? getDiscount(Store store) => store.discount != null ? store.discount!.discount : 0;
 
