@@ -3,13 +3,13 @@ importScripts("https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js")
 
 // Updated Firebase configuration for Pegasus project
 firebase.initializeApp({
-  apiKey: "AIzaSyBtpRQdTwBFMzQQisxNiyiaAcuHs-q28BU",
+  apiKey: "AIzaSyARG58Taa7uiGOJ3P8_PLZHVrZ023bvTiI",
   authDomain: "pegasus-ecommerce-fed19.firebaseapp.com",
   projectId: "pegasus-ecommerce-fed19",
   storageBucket: "pegasus-ecommerce-fed19.firebasestorage.app",
   messagingSenderId: "602599280130",
-  appId: "1:602599280130:web:pegasus-user-web-app",
-  measurementId: "G-PEGASUS-WEB"
+  appId: "1:602599280130:web:af71d70c78f9164f13e11b",
+  measurementId: "G-T08XDGYQLG"
 });
 
 const messaging = firebase.messaging();
